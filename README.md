@@ -25,7 +25,7 @@ Given user-like interactions, which listings should we recommend to each user to
 
 #### Results
 - Surprise SVD: ran but produced weak relevance because implicit likes collapsed to a single rating; RMSE/MAE kept only as a baseline sanity check.
-- LightFM (WARP): primary model; delivers ranking metrics (AUC, Precision@10, Recall@10) and sample top-5 recommendations; better suited for implicit interactions and used going forward.
+- LightFM (WARP): primary model; delivers ranking metrics (AUC, Precision@10, Recall@10) and sample top-5 recommendations; better suited for implicit interactions and used going forward. The notebook uses `lightfm.evaluation.{auc_score, precision_at_k, recall_at_k}` on an 80/20 train/test split—rerun the LightFM section to view the current metric values.
 
 #### Next steps
 - Incorporate user/listing side features into LightFM (demographics, price, home size).
