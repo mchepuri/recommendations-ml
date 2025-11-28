@@ -5,7 +5,7 @@ Real Estate Listing Recommender
 Muralimanohar Chepuri
 
 #### Executive summary
-Built a recommendation baseline for real-estate listings using user-like interactions. Prepared data, explored pricing vs. house size, trained an SVD model with Surprise, and built an implicit-feedback ranking model with LightFM (WARP), reporting RMSE/MAE (for comparison only) and ranking metrics (AUC, Precision@K, Recall@K).
+Built a recommendation baseline for real-estate listings using user-like interactions. Prepared data, explored pricing vs. house size, tried Surprise SVD for a matrix-factorization baseline (saw poor relevance because interactions are implicit likes), then switched to LightFM with a WARP loss for ranking. Reported RMSE/MAE from SVD only as a sanity check and focused on LightFM ranking metrics (AUC, Precision@K, Recall@K) and example top-N recommendations.
 
 #### Rationale
 Help users discover relevant listings faster by leveraging historical likes instead of only search filters.
@@ -20,12 +20,12 @@ Given user-like interactions, which listings should we recommend to each user to
 
 #### Methodology
 - EDA on listings (price vs. square footage correlation/visualization).
-- Build implicit-like dataset for Surprise; train/test split and 5-fold CV with SVD to compare models.
-- Train LightFM WARP model on user-likes; evaluate AUC, Precision@10, Recall@10; generate sample top-N recommendations.
+- Built an implicit-only dataset for Surprise SVD; train/test split and 5-fold CV (kept RMSE/MAE just for comparison, not as a ranking target).
+- Trained LightFM WARP on user likes (implicit feedback); evaluated AUC, Precision@10, Recall@10; generated example top-N recommendations per user.
 
 #### Results
-- Surprise SVD: provides latent factors; RMSE/MAE on implicit 1.0 ratings are for relative model comparison only.
-- LightFM (WARP): produces ranking metrics (AUC, Precision@10, Recall@10) and sample top-5 recommendations per user; performs better-suited ranking for implicit data.
+- Surprise SVD: ran but produced weak relevance because implicit likes collapsed to a single rating; RMSE/MAE kept only as a baseline sanity check.
+- LightFM (WARP): primary model; delivers ranking metrics (AUC, Precision@10, Recall@10) and sample top-5 recommendations; better suited for implicit interactions and used going forward.
 
 #### Next steps
 - Incorporate user/listing side features into LightFM (demographics, price, home size).
