@@ -20,18 +20,22 @@ Given user-like interactions, which listings should we recommend to each user to
 
 #### Methodology
 - EDA on listings (price vs. square footage correlation/visualization).
-- Built an implicit-only dataset for Surprise SVD; train/test split and 5-fold CV (kept RMSE/MAE just for comparison, not as a ranking target).
-- Trained LightFM WARP on user likes (implicit feedback); evaluated AUC, Precision@10, Recall@10; generated example top-N recommendations per user.
+- Built an implicit-only dataset from user likes.
+- Trained implicit-feedback recommenders (matrix factorization and baselines); evaluated ranking metrics at K.
 
 #### Results
-- Surprise SVD: ran but produced weak relevance because implicit likes collapsed to a single rating; RMSE/MAE kept only as a baseline sanity check.
-- LightFM (WARP): primary model; delivers ranking metrics (AUC, Precision@10, Recall@10) and sample top-5 recommendations; better suited for implicit interactions and used going forward. The notebook uses `lightfm.evaluation.{auc_score, precision_at_k, recall_at_k}` on an 80/20 train/test split—rerun the LightFM section to view the current metric values.
+- For implicit likes (binary interactions), ranking metrics such as Precision@K/Recall@K/NDCG@K are more meaningful than RMSE/MAE.
+- The script `recsys_offline_eval.py` runs a reproducible offline evaluation using the `implicit` library (works in Python 3.13).
+
+#### Reproducible evaluation
+Run:
+`python recsys_offline_eval.py --data-dir data-refined --split frac --test-frac 0.2 --k 10`
 
 #### Next steps
-- Incorporate user/listing side features into LightFM (demographics, price, home size).
-- Tune LightFM hyperparameters (components, learning rate, loss) and evaluate Recall/NDCG at multiple K.
+- Add better side-information (text embeddings, geospatial features, recency) and consider a two-stage system (retrieval + reranking).
+- Tune hyperparameters and evaluate Recall/NDCG at multiple K.
 - Add holdout/temporal splits and cold-start handling for new listings/users.
-- Consider production-serving approach (batch scoring or approximate nearest neighbors on embeddings).
+- Consider production-serving approach (batch scoring, ANN retrieval).
 
 #### Outline of project
 - [Recommendation notebook](recommendations-ml.ipynb)

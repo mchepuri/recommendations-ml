@@ -1,0 +1,57 @@
+{
+  "k": 10,
+  "seed": 42,
+  "alpha": 0.7,
+  "split": "frac",
+  "test_frac": 0.2,
+  "results": {
+    "popular": {
+      "users_eval": 200,
+      "precision@10": 0.0,
+      "recall@10": 0.0,
+      "map@10": 0.0,
+      "ndcg@10": 0.0,
+      "coverage@10": 0.0004770642201834862
+    },
+    "content": {
+      "users_eval": 200,
+      "precision@10": 0.0005,
+      "recall@10": 0.00018518518518518518,
+      "map@10": 7.142857142857142e-05,
+      "ndcg@10": 0.00036681961049680025,
+      "coverage@10": 0.0015412844036697248
+    },
+    "als": {
+      "users_eval": 200,
+      "precision@10": 0.0,
+      "recall@10": 0.0,
+      "map@10": 0.0,
+      "ndcg@10": 0.0,
+      "coverage@10": 0.053908256880733946
+    },
+    "bpr": {
+      "users_eval": 200,
+      "precision@10": 0.0005,
+      "recall@10": 0.00018518518518518518,
+      "map@10": 0.00016666666666666666,
+      "ndcg@10": 0.0005502294157452004,
+      "coverage@10": 0.05236697247706422
+    },
+    "hybrid_als_content": {
+      "users_eval": 200,
+      "precision@10": 0.0,
+      "recall@10": 0.0,
+      "map@10": 0.0,
+      "ndcg@10": 0.0,
+      "coverage@10": 0.05236697247706422
+    },
+    "als_rerank_sgd": {
+      "users_eval": 200,
+      "precision@10": 0.0,
+      "recall@10": 0.0,
+      "map@10": 0.0,
+      "ndcg@10": 0.0,
+      "coverage@10": 0.004917431192660551
+    }
+  }
+}

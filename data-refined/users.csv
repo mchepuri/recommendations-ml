@@ -1,0 +1,201 @@
+user_id,gender,age,education
+1,Other,69,Post Graduation
+2,Male,66,Post Graduation
+3,Other,66,High School
+4,Other,69,No Education
+5,Male,29,Graduation
+6,Male,56,Graduation
+7,Other,19,High School
+8,Female,20,Graduation
+9,Other,66,Post Graduation
+10,Other,54,No Education
+11,Other,66,Elementary
+12,Other,34,Graduation
+13,Male,66,Post Graduation
+14,Other,19,Elementary
+15,Female,19,No Education
+16,Male,45,Elementary
+17,Female,40,Post Graduation
+18,Female,54,Elementary
+19,Female,49,High School
+20,Female,50,Elementary
+21,Male,18,Graduation
+22,Male,36,Graduation
+23,Female,19,High School
+24,Female,61,Post Graduation
+25,Male,43,Graduation
+26,Male,49,No Education
+27,Male,23,Graduation
+28,Other,49,Graduation
+29,Other,21,Post Graduation
+30,Other,28,Elementary
+31,Female,34,Graduation
+32,Other,55,High School
+33,Female,41,Elementary
+34,Female,22,No Education
+35,Other,69,Post Graduation
+36,Female,51,No Education
+37,Other,23,Elementary
+38,Other,39,Elementary
+39,Male,28,Elementary
+40,Other,65,No Education
+41,Male,33,Elementary
+42,Other,50,No Education
+43,Other,26,Elementary
+44,Male,23,High School
+45,Male,33,Elementary
+46,Other,46,No Education
+47,Female,20,Graduation
+48,Male,37,Elementary
+49,Female,53,Graduation
+50,Female,36,High School
+51,Female,43,Post Graduation
+52,Male,20,High School
+53,Female,36,Elementary
+54,Male,37,Graduation
+55,Female,49,Graduation
+56,Other,24,No Education
+57,Other,69,Graduation
+58,Male,58,No Education
+59,Other,50,Post Graduation
+60,Other,57,Elementary
+61,Female,56,No Education
+62,Male,35,Post Graduation
+63,Female,57,Graduation
+64,Female,18,Graduation
+65,Female,28,Post Graduation
+66,Female,45,Graduation
+67,Female,42,Post Graduation
+68,Female,67,No Education
+69,Female,40,No Education
+70,Male,48,Post Graduation
+71,Other,47,No Education
+72,Female,59,No Education
+73,Female,52,No Education
+74,Female,24,High School
+75,Female,33,Elementary
+76,Female,43,Graduation
+77,Female,65,High School
+78,Other,69,No Education
+79,Other,66,Post Graduation
+80,Female,19,No Education
+81,Other,18,Elementary
+82,Male,65,No Education
+83,Female,29,Post Graduation
+84,Male,22,Elementary
+85,Male,54,No Education
+86,Female,49,Elementary
+87,Other,26,Graduation
+88,Male,58,Graduation
+89,Female,52,No Education
+90,Male,36,Elementary
+91,Male,65,Post Graduation
+92,Male,33,No Education
+93,Male,20,Graduation
+94,Other,37,Graduation
+95,Male,41,No Education
+96,Male,50,Elementary
+97,Male,41,Graduation
+98,Other,69,Elementary
+99,Male,28,Graduation
+100,Male,66,Graduation
+101,Other,25,High School
+102,Other,53,Graduation
+103,Other,55,Post Graduation
+104,Male,57,No Education
+105,Other,37,No Education
+106,Other,52,Elementary
+107,Male,65,Graduation
+108,Other,42,Post Graduation
+109,Male,52,Elementary
+110,Female,42,High School
+111,Other,46,Elementary
+112,Female,35,Elementary
+113,Male,63,Graduation
+114,Other,35,High School
+115,Male,19,Elementary
+116,Female,52,Post Graduation
+117,Male,33,Post Graduation
+118,Other,58,No Education
+119,Other,53,High School
+120,Female,50,High School
+121,Male,21,No Education
+122,Other,50,Elementary
+123,Female,31,High School
+124,Other,38,Post Graduation
+125,Other,65,Post Graduation
+126,Male,37,Graduation
+127,Other,25,High School
+128,Male,24,Elementary
+129,Other,20,No Education
+130,Female,34,No Education
+131,Other,50,Elementary
+132,Male,65,Graduation
+133,Male,29,No Education
+134,Female,68,High School
+135,Other,39,Graduation
+136,Other,39,High School
+137,Female,63,Post Graduation
+138,Other,47,Graduation
+139,Other,55,No Education
+140,Male,55,Graduation
+141,Other,62,Graduation
+142,Other,68,Graduation
+143,Female,25,Graduation
+144,Female,44,High School
+145,Male,44,Post Graduation
+146,Other,51,Elementary
+147,Other,38,Graduation
+148,Other,47,No Education
+149,Male,50,Graduation
+150,Male,45,No Education
+151,Female,64,High School
+152,Male,50,No Education
+153,Other,22,Elementary
+154,Other,65,Post Graduation
+155,Male,36,No Education
+156,Other,21,No Education
+157,Other,52,Post Graduation
+158,Male,66,Elementary
+159,Male,34,Graduation
+160,Other,61,No Education
+161,Other,45,Post Graduation
+162,Other,47,High School
+163,Female,46,Post Graduation
+164,Female,63,High School
+165,Female,23,Elementary
+166,Male,52,Graduation
+167,Female,58,Post Graduation
+168,Male,54,No Education
+169,Male,41,Elementary
+170,Female,46,Post Graduation
+171,Female,66,No Education
+172,Female,63,Post Graduation
+173,Other,48,High School
+174,Female,52,Post Graduation
+175,Other,50,Post Graduation
+176,Male,69,Post Graduation
+177,Other,38,Elementary
+178,Female,49,Post Graduation
+179,Male,40,No Education
+180,Male,50,High School
+181,Male,20,High School
+182,Other,35,Post Graduation
+183,Female,42,Elementary
+184,Male,59,Elementary
+185,Male,48,No Education
+186,Male,20,Post Graduation
+187,Other,57,High School
+188,Other,63,Elementary
+189,Female,41,Post Graduation
+190,Other,67,Elementary
+191,Male,49,Elementary
+192,Female,64,High School
+193,Male,39,Graduation
+194,Male,40,No Education
+195,Other,19,No Education
+196,Female,44,High School
+197,Other,59,Elementary
+198,Other,19,Post Graduation
+199,Female,43,Elementary
+200,Male,34,High School
