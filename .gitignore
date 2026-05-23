@@ -1,3 +1,8 @@
+# IDE and AI tool config — never commit these
+.claude/
+.DS_Store
+.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
