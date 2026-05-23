@@ -1,5 +1,4 @@
 # IDE and AI tool config — never commit these
-.claude/
 .DS_Store
 .vscode/
 
